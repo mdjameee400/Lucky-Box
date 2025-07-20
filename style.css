@@ -1,0 +1,85 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f9fc;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin-top: 40px;
+}
+
+.icon {
+  font-size: 40px;
+  background: #6a5dfc;
+  color: white;
+  padding: 15px;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+h1 {
+  margin-top: 10px;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px 0;
+}
+
+.stat {
+  font-size: 18px;
+  background: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.message {
+  margin: 10px auto;
+  width: fit-content;
+  color: red;
+  background: #ffe0e0;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.box {
+  width: 80px;
+  height: 80px;
+  background: #e6efff;
+  font-size: 28px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s;
+}
+
+.box.clicked {
+  pointer-events: none;
+}
+
+.box.winner {
+  background: #d4ffd4;
+  color: green;
+}
+
+.box.loser {
+  background: #ffd6d6;
+  color: red;
+}
